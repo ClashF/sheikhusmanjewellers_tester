@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Usman Jewellers - Gold Test Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="#"><img src="./sujlogoo (1).png" width="370px" height="300px"></a> 
+    </div>
+    <div class="container">
+        <header>
+            
+            <h1 style="padding-left: 20px;">Sheikh Usman Jewellers</h1>
+            <h2 style="padding-left: 105px;">Gold Test Lab</h2>
+        </header>
+        <section class="form-section">
+          
+                <form id="densityGoldForm" style="background-color: #F5DEB3;padding:5px;margin-left:10px;padding-left:20px;">
+                    <h3>Diesel Density</h3>
+                    <label for="temperature">Temperature (°C):</label><br>
+                    <input type="number" id="temperature" name="temperature" step="0.1" required><br><br>
+                    <label for="dryWeightDensity">Dry Weight (g):</label><br>
+                    <input type="number" id="dryWeightDensity" name="dryWeightDensity" step="0.1" required><br><br>
+                    <label for="wetWeightDensity">Wet Weight (g):</label><br>
+                    <input type="number" id="wetWeightDensity" name="wetWeightDensity" step="0.1" required><br><br>
+                    <button type="button" id="calculateDensityButton" style="margin-left: 80px;">Calculate Diesel Density</button><br>
+                </form>
+          
+
+            <form id="goldForm"style="background-color: #F5DEB3;padding:5px;margin-left:10px;padding-left:20px;margin-top:10px;">
+                <h3>Gold Calculation</h3>
+                <label for="dryWeightGold">Gold Dry Weight (in grams):</label><br>
+                <input type="number" id="dryWeightGold" name="dryWeightGold" step="0.1" required><br><br>
+                <label for="wetWeightGold">Gold Wet Weight (in grams):</label><br>
+                <input type="number" id="wetWeightGold" name="wetWeightGold" step="0.1" required><br><br>
+                <button type="button" id="calculateGoldButton">Calculate Gold Properties</button><br>
+            </form>
+        </section>
+
+        <section id="result" class="result-section"style="padding-left:20px;">
+            <h3>Results:</h3>
+            <div class="result-item"><p id="densityResult"></p></div>
+            <div class="result-item"><p id="goldPurity"></p></div>
+            <div class="result-item"><p id="pureWeight"></p></div>
+            <div class="result-item"><p id="impureWeight"></p></div>
+            <div class="result-item"><p id="goldKarat"></p></div>
+            <div class="result-item"><p id="fineness"></p></div>
+            <div class="result-item"><p id="milli"></p></div>
+            <div class="result-item"><p id="rati"></p></div>
+        </section>
+    </div>
+
+    <footer>
+        <p style="padding-left: 15px;">&copy; 2024 Sheikh Usman Jewellers - Gold Test Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
